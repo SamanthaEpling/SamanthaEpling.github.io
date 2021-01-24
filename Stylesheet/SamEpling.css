@@ -281,6 +281,16 @@ img {
     display: block;
 }
 
+#github_icon {
+    width: 15%;
+    height: 15%;
+}
+
+#linkedin_icon {
+    width: 25%;
+    height: 25%;
+}
+
 center:hover {
     transition: transform 2s;
     transform: scale(1.1);

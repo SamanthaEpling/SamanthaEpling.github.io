@@ -25,7 +25,7 @@
             <a class="active" href="#Home">Home</a>
             <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
+            <a href="#GitHub">Skills Showcase</a>
             <a onclick="openForm()">Contact</a>
         </div>
 
@@ -36,8 +36,8 @@
             <br>
 
             <video autoplay muted loop id="Typing_Video">
-                <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
-                    Your browser does not support HRML5 video.
+                <source src="Stylesheet/Video/video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
             </video>
         </div>
 
@@ -46,11 +46,8 @@
                 <p>
                     <strong>
                         <center>
-                            <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                            <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage
-                            <br>or field of battle and to command such unswervinglydutiful actors or troops.
-                            </q>
-                            <br>-Joseph Weizenbaum<br>
+                            <q>Give someone a program, you frustrate them for a day; <br>teach them how to program, you frustrate them for a lifetime.</q>
+                            <br>-David Leinweber<br>
                             <br>
                             My name is Samantha Epling.  Welcome to my portfolio website. <br>
                             On it, I will tell you about my background and experience.<br>
@@ -161,8 +158,9 @@
         <div class="Row" id="GitHub">
             <div class="Column_1">
                 <h1>Skills Showcase</h1>
-                <p>You can view all my coding projects via my GitHub profile here:<br>
-                <center><a href="https://github.com/SamanthaEpling" target="_blank">Samantha Epling GitHub</a></center></p>
+                <center><a href="https://github.com/SamanthaEpling"><img src="Stylesheet/Images/—Pngtree—github icon design vector_3648767.png" id="github_icon" alt="github icons png from pngtree.com"></a>
+                    <a href="https://www.linkedin.com/in/samanthaepling/"><img src="Stylesheet/Images/—Pngtree—linkedin icon_3584856.png" id="linkedin_icon" alt="linkedin icons png from pngtree.com"></a>
+                    </center>
                     <div>
                         <h5>HTML & CSS Projects</h5>
                         <p>One of my earliest designs for coursework requirements, but includes several pictures of my animal family.</p>
@@ -210,7 +208,7 @@
         <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
                 <div class="form-popup" id="myForm">
-                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <form action="https://formspree.io/EplingDeveloper@gmail.com" method="POST" class="form-container">
                     <h1>Contact</h1>
                         <label for="name"><b>Name</b></label>
                             <input type="text" placeholder="Type your name here" name="name" required>
@@ -230,9 +228,13 @@
         
         
         <footer>
-            <p>
-                <center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
-            </p>
+            <div>
+                <center>Samantha Epling, <span id="current_year_display"></span><br><i> With special thanks to:  </i><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+            </div>
+            <script>
+                var y = new Date();
+                document.getElementById("current_year_display").innerHTML = y.getFullYear();
+            </script>
         </footer>
     </body>
 </html>
