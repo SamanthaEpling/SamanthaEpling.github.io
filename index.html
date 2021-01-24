@@ -215,17 +215,64 @@
                         <label for="phone"><b>Phone</b></label>
                             <input type="text" placeholder="Enter your phone number here" name="phone">
                         <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Type your email address here" name="email" required>
+                            <input type="email" placeholder="Type your email address here" name="email" required>
                         <label for="message"><b>Message</b></label>
-                            <input type="textarea" placeholder="Type your message here" name="message">
+                            <input type="text" placeholder="Type your message here" name="message">
             
-            <button type="submit" class="btn">SUBMIT</button>
+            <button id="myForm-button">Submit</button>
             <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            <p id="myForm-status"></p>
                     </form>
                 </div>
         </div>
 
-        
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+          
+              // get the form elements defined in your form HTML above
+              
+              var form = document.getElementById("myForm");
+              var button = document.getElementById("myForm-button");
+              var status = document.getElementById("myForm-status");
+          
+              // Success and Error functions for after the form is submitted
+              
+              function success() {
+                form.reset();
+                button.style = "display: none ";
+                status.innerHTML = "Thanks!";
+              }
+          
+              function error() {
+                status.innerHTML = "Oops! There was a problem.";
+              }
+          
+              // handle the form submission event
+          
+              form.addEventListener("submit", function(ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+              });
+            });
+            
+            // helper function for sending an AJAX request
+          
+            function ajax(method, url, data, success, error) {
+              var xhr = new XMLHttpRequest();
+              xhr.open(method, url);
+              xhr.setRequestHeader("Accept", "application/json");
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                  success(xhr.response, xhr.responseType);
+                } else {
+                  error(xhr.status, xhr.response, xhr.responseType);
+                }
+              };
+              xhr.send(data);
+            }
+          </script>
         
         <footer>
             <div>
