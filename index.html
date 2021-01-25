@@ -5,13 +5,21 @@
         <meta charset="UTF-8">
         <title>Samantha Epling</title>
         <link rel="stylesheet" type="text/css" href="Stylesheet/SamEpling.css">
-        <link href="https://fonts.googleapis.com/css?family=Calistoga|Gupter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Calistoga|Gupter&display=swap" rel="stylesheet">  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="Stylesheet/SamEpling.js"></script>
         
     </head>
     <body class="Background">
-   
+        
+        <!--FADE IN-->
+        <script>
+            document.bodyclassName += ' fade-out';
+            $(function () {
+                $('body').removeClass('fade-out');
+            }
+            ); 
+        </script>
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#Slideshow">Slideshow</a>
@@ -22,6 +30,7 @@
 
         <div class="btn cancel" >
             <!--onclick="closeForm()"-->
+        </div>
         <div id="Home">
             <br>
             <br>
@@ -36,16 +45,16 @@
         <div class="Video_Text">
             <h1 style="color:gainsboro; text-shadow: 2px 2px black;">Samantha Epling's Portfolio</h1>
                 <p>
-                    <strong>
-                        <center>
+                    <center>
+                        <strong>
                             <q>Give someone a program, you frustrate them for a day; <br>teach them how to program, you frustrate them for a lifetime.</q>
                             <br>-David Leinweber<br>
                             <br>
                             My name is Samantha Epling.  Welcome to my portfolio website. <br>
                             On it, I will tell you about my background and experience.<br>
                             <br>Thank you for stopping by and enjoy!
-                        </center>
-                    </strong>
+                        </strong>
+                    </center>
                 </p>
         </div>
 
@@ -107,9 +116,8 @@
             </div>
         </div>
         <script>
-
-            var slideIndex=1;
-                showSlides(slideIndex);
+            var slideIndex = 1;
+            showSlides(slideIndex);
             function plusSlides(n) {
                 showSlides(slideIndex += n);
             }
@@ -120,26 +128,25 @@
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
                 var dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = slides.length}
-                        for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace("active", "");
-                        }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
             }
         </script>
-        
         <div class="Row" id="About">
             <div class="Column_2">
                 <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
             </div>
 
             <div class="Column_1">
-                <h1>About</h2>
+                <h1>About</h1>
                     <p>I am a software developer who loves to code! I enjoy spending time outdoors and with my husband, horse, dog and cats. <br><br> I am a graduate of 
 					<a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the 
 					following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. <br><br> I am a full-stack developer and would love to work 
@@ -215,71 +222,14 @@
             <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             <p id="myForm-status"></p>
                     </form>
-                </div>
+                </div>                
         </div>
-        <script>
-            window.addEventListener("DOMContentLoaded", function() {
-          
-              // get the form elements defined in your form HTML above
-              
-              var form = document.getElementById("myForm");
-              var button = document.getElementById("myForm-button");
-              var status = document.getElementById("myForm-status");
-          
-              // Success and Error functions for after the form is submitted
-              
-              function success() {
-                form.reset();
-                button.style = "display: none ";
-                status.innerHTML = "Thanks!";
-              }
-          
-              function error() {
-                status.innerHTML = "Oops! There was a problem.";
-              }
-          
-              // handle the form submission event
-          
-              form.addEventListener("submit", function(ev) {
-                ev.preventDefault();
-                var data = new FormData(form);
-                ajax(form.method, form.action, data, success, error);
-              });
-            });
-            
-            // helper function for sending an AJAX request
-          
-            function ajax(method, url, data, success, error) {
-              var xhr = new XMLHttpRequest();
-              xhr.open(method, url);
-              xhr.setRequestHeader("Accept", "application/json");
-              xhr.onreadystatechange = function() {
-                if (xhr.readyState !== XMLHttpRequest.DONE) return;
-                if (xhr.status === 200) {
-                  success(xhr.response, xhr.responseType);
-                } else {
-                  error(xhr.status, xhr.response, xhr.responseType);
-                }
-              };
-              xhr.send(data);
-            }
-          </script>
-                  <script>
-                    document.bodyclassName += ' fade-out';
-                      $(function() {
-                          $('body').removeClass('fade-out');
-                      }
-                  );   
-              </script> 
-        
         <footer>
-            <div>
-                <center>Samantha Epling, <span id="current_year_display"></span><br><i> With special thanks to:  </i><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
-            </div>
-            <script>
-                var y = new Date();
-                document.getElementById("current_year_display").innerHTML = y.getFullYear();
-            </script>
+            <center>Samantha Epling, <span id="current_year_display"></span><br><i> With special thanks to:  </i><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>        
         </footer>
+        <script>
+            var y = new Date();
+            document.getElementById("current_year_display").innerHTML = y.getFullYear();
+        </script>
     </body>
 </html>
