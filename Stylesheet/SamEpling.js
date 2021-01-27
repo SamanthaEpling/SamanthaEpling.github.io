@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $("a").on('click', function(event) {
         
         if (this.Link !== "") {
@@ -7,7 +7,7 @@ $(document).ready(function(){
             var Link = this.Link;
 
             $('html, body').animate({
-                scrollTop: $(Link).offset().top
+                scrollTop: $(Link).offset().top()
             }, 2000, function(){
 
                 window.location.Link = Link;

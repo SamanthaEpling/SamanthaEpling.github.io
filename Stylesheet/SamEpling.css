@@ -72,7 +72,7 @@ body.fade-out {
     background-color: lightskyblue;
 }
 
-@keyframes zoominoutsinglefeatured {
+/*@keyframes zoominoutsinglefeatured {
     0% {
         transform: scale(1.5,1.5);
     }
@@ -89,7 +89,7 @@ body.fade-out {
     top: 0;
     z-index: -1;
     animation: zoominoutsinglefeatured 5s;
-}
+}*/
 
 .Video_Text {
     background: rgba(135, 206, 250,.65);
@@ -177,7 +177,7 @@ body.fade-out {
 
 .Slide_Number {
     color: white;
-    position: aboslute;
+    position: absolute;
     top: 0;
     font-family: 'Gupter', serif;
     letter-spacing: .1vw;
@@ -376,7 +376,7 @@ button {
     letter-spacing: .3vw;
     font-size: 1.5vw;
 
-    padding: 1.5vw 1/5vw;
+    padding: 1.5vw 1.5vw;
     border-style: solid;
     cursor: pointer;
     width: 100%;

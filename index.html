@@ -5,20 +5,17 @@
         <meta charset="UTF-8">
         <title>Samantha Epling</title>
         <link rel="stylesheet" type="text/css" href="Stylesheet/SamEpling.css">
-        <link href="https://fonts.googleapis.com/css?family=Calistoga|Gupter&display=swap" rel="stylesheet">  
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="Stylesheet/SamEpling.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Calistoga|Gupter&display=swap" rel="stylesheet">      
         
     </head>
     <body class="Background">
-        
         <!--FADE IN-->
         <script>
             document.bodyclassName += ' fade-out';
             $(function () {
                 $('body').removeClass('fade-out');
             }
-            ); 
+            );
         </script>
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
@@ -28,7 +25,7 @@
             <a onclick="openForm()">Contact</a>
         </div>
 
-        <div class="btn cancel" >
+        <div class="btn cancel">
             <!--onclick="closeForm()"-->
         </div>
         <div id="Home">
@@ -37,25 +34,25 @@
 
             <video autoplay muted loop id="Typing_Video">
                 <source src="Stylesheet/Video/video.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
+                Your browser does not support HTML5 video.
             </video>
             <!--mp4 video type is unable to play in Firefox browser-->
         </div>
 
         <div class="Video_Text">
             <h1 style="color:gainsboro; text-shadow: 2px 2px black;">Samantha Epling's Portfolio</h1>
-                <p>
-                    <center>
-                        <strong>
-                            <q>Give someone a program, you frustrate them for a day; <br>teach them how to program, you frustrate them for a lifetime.</q>
-                            <br>-David Leinweber<br>
-                            <br>
-                            My name is Samantha Epling.  Welcome to my portfolio website. <br>
-                            On it, I will tell you about my background and experience.<br>
-                            <br>Thank you for stopping by and enjoy!
-                        </strong>
-                    </center>
-                </p>
+            <p>
+                <center>
+                    <strong>
+                        <q>Give someone a program, you frustrate them for a day; <br>teach them how to program, you frustrate them for a lifetime.</q>
+                        <br>-David Leinweber<br>
+                        <br>
+                        My name is Samantha Epling.  Welcome to my portfolio website. <br>
+                        On it, I will tell you about my background and experience.<br>
+                        <br>Thank you for stopping by and enjoy!
+                    </strong>
+                </center>
+            </p>
         </div>
 
         <div id="Slideshow">
@@ -65,53 +62,53 @@
                     <div class="mySlides fade">
                         <div class="Slide_Number">1 / 6</div>
                         <img class="Slide_Show_Images" src="Stylesheet/Images/SamEpling_4.jpg" style="width:100%">
-                            <div class="text">I'm available to assist you on your project!</div>
+                        <div class="text">I'm available to assist you on your project!</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">2 / 6</div>
-                        <img class="Slide_Show_Images"  src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-                            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript, C# & .NET Framework</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript, C# & .NET Framework</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">3 / 6</div>
                         <img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width:100%">
-                            <div class="text">the popular programming language Python,</div>
+                        <div class="text">the popular programming language Python,</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">4 / 6</div>
                         <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-                            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">5 / 6</div>
                         <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
-                            <div class="text">back end development, database and SQL.</div>
+                        <div class="text">back end development, database and SQL.</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">6 / 6</div>
                         <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
-                            <div class="text">
-                                <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
-                            </div>
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
                     </div>
 
-                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-          <br>
-            
+                <br>
+
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
                     <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>    
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
         </div>
@@ -147,57 +144,65 @@
 
             <div class="Column_1">
                 <h1>About</h1>
-                    <p>I am a software developer who loves to code! I enjoy spending time outdoors and with my husband, horse, dog and cats. <br><br> I am a graduate of 
-					<a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the 
-					following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. <br><br> I am a full-stack developer and would love to work 
-					with you on your project. <a onclick="openForm()">Contact</a> me below!</p>
+                <p>
+                    I am a software developer who loves to code! I enjoy spending time outdoors and with my husband, horse, dog and cats. <br><br> I am a graduate of
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the
+                    following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. <br><br> I am a full-stack developer and would love to work
+                    with you on your project. <a onclick="openForm()" href="#Contact">Contact</a> me below!
+                </p>
             </div>
         </div>
 
         <div class="Row" id="GitHub">
             <div class="Column_1">
                 <h1>Skills Showcase</h1>
-                <a href="https://github.com/SamanthaEpling"><img src="Stylesheet/Images/—Pngtree—github icon design vector_3648767.png" id="github_icon" alt="github icons png from pngtree.com"></a>
-                    <a href="https://www.linkedin.com/in/samanthaepling/"><img src="Stylesheet/Images/—Pngtree—linkedin icon_3584856.png" id="linkedin_icon" alt="linkedin icons png from pngtree.com"></a>
-                    
-                    <div>
-                        <h5>HTML & CSS Projects</h5>
-                        <p>One of my earliest designs for coursework requirements, but includes several pictures of my animal family.</p>
-                        <center><a href="https://github.com/SamanthaEpling/Sams_HTML_and_CSS_Projects/tree/master/One-Page_Website" target="_blank">One-Page Website project</a></center>
-                    </div>
-                    <div>
-                        <h5>JavaScript Projects</h5>
-                        <p>This project of my coursework illustrates how clients can interact with webpages by an ordering menu that supplies information as a person selects elements of the page.</p>
-                        <center><a href="https://github.com/SamanthaEpling/JavaScriptProjects/tree/master/Pizza_Project" target="_blank">Pizza Ordering Menu project</a></center>
-                        <p>This project, provided by my coursework, illustrates how multiple users can interact, how elements like sound and opacity can be incorporated behind the scenes, 
-						so the user can just be blissfully playing a game, without having to give lots of commands.</p>
-                        <center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-SQL-Coding-Projects" target="_blank">Tic Tac Toe Game project</a></center>
-                    </div>
-                    <div>
-                        <h5>SQL Projects</h5>
-                        <p>For this portion of my coursework, I had to not only create my database just from an image, but also populate it too!  Then I could create queries to identify related information.</p>
-                        <center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-SQL-Coding-Projects" target="_blank">Library Management System project</a></center>
-                    </div>
-                    <div>
-                        <h5>Python Projects</h5>
-                        <p>This portion of my coursework had us work along a sample project to show just how robust and interactive using Python and the packages Tkinter and Django could be.  
-						Through the tutorial project, we saw and learned to incorporate tags, with Python syntax, to have HTML, CSS, JS and Python code work concurrently to modify a dynamic 
-						template to create and interact with databases and administrative processes.  I also learned to to more effectively use command line prompt to generate a mock-server 
-						to test out the functanality of our project and to generate a virtual environment much as I would do when I would be coding for a client.  See the screenshot to the 
-						right to see how complex coding can be to create a dynamic website!</p>
-                        <center><a href="" target="_blank"></a></center>
-                    </div>
-					<div>
-						<h5>C# & .NET Framework Course</h5>
-						<p>This intensive course taught me the ins and outs of MVC style framework, code-first and DB first Entity Framework, amongst many other packaged works created with C#, but also incorporating 
-						in HTML, CSS, and JS to further my understanding of Object Oriented Operations.  My final project, in which I selected to research on my own the code first Entity Framework approach
-						to creating an application, I consider to be my finest overall work for showing how to best utilize controlers, models, and views with the addition of frameworks to create
-						the most dynamic application I've had experience with to date. Please check it out for yourself!</p>
-						<center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-Basic-C-Sharp-Projects/tree/master/EplingPets" target="_blank">Epling Pets Application</a></center>
-					</div>
-					
-            
-            
+                <a href="https://github.com/SamanthaEpling" target="_blank"><img src="Stylesheet/Images/—Pngtree—github icon design vector_3648767.png" id="github_icon" alt="github icons png from pngtree.com"></a>
+                <a href="https://www.linkedin.com/in/samanthaepling/" target="_blank"><img src="Stylesheet/Images/—Pngtree—linkedin icon_3584856.png" id="linkedin_icon" alt="linkedin icons png from pngtree.com"></a>
+
+                <div>
+                    <h5>HTML & CSS Projects</h5>
+                    <p>One of my earliest designs for coursework requirements, but includes several pictures of my animal family.</p>
+                    <center><a href="https://github.com/SamanthaEpling/Sams_HTML_and_CSS_Projects/tree/master/One-Page_Website" target="_blank">One-Page Website project</a></center>
+                </div>
+                <div>
+                    <h5>JavaScript Projects</h5>
+                    <p>This project of my coursework illustrates how clients can interact with webpages by an ordering menu that supplies information as a person selects elements of the page.</p>
+                    <center><a href="https://github.com/SamanthaEpling/JavaScriptProjects/tree/master/Pizza_Project" target="_blank">Pizza Ordering Menu project</a></center>
+                    <p>
+                        This project, provided by my coursework, illustrates how multiple users can interact, how elements like sound and opacity can be incorporated behind the scenes,
+                        so the user can just be blissfully playing a game, without having to give lots of commands.
+                    </p>
+                    <center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-SQL-Coding-Projects" target="_blank">Tic Tac Toe Game project</a></center>
+                </div>
+                <div>
+                    <h5>SQL Projects</h5>
+                    <p>For this portion of my coursework, I had to not only create my database just from an image, but also populate it too!  Then I could create queries to identify related information.</p>
+                    <center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-SQL-Coding-Projects" target="_blank">Library Management System project</a></center>
+                </div>
+                <div>
+                    <h5>Python Projects</h5>
+                    <p>
+                        This portion of my coursework had us work along a sample project to show just how robust and interactive using Python and the packages Tkinter and Django could be.
+                        Through the tutorial project, we saw and learned to incorporate tags, with Python syntax, to have HTML, CSS, JS and Python code work concurrently to modify a dynamic
+                        template to create and interact with databases and administrative processes.  I also learned to to more effectively use command line prompt to generate a mock-server
+                        to test out the functanality of our project and to generate a virtual environment much as I would do when I would be coding for a client.  See the screenshot to the
+                        right to see how complex coding can be to create a dynamic website!
+                    </p>
+                    <center><a href="" target="_blank"></a></center>
+                </div>
+                <div>
+                    <h5>C# & .NET Framework Course</h5>
+                    <p>
+                        This intensive course taught me the ins and outs of MVC style framework, code-first and DB first Entity Framework, amongst many other packaged works created with C#, but also incorporating
+                        in HTML, CSS, and JS to further my understanding of Object Oriented Operations.  My final project, in which I selected to research on my own the code first Entity Framework approach
+                        to creating an application, I consider to be my finest overall work for showing how to best utilize controlers, models, and views with the addition of frameworks to create
+                        the most dynamic application I've had experience with to date. Please check it out for yourself!
+                    </p>
+                    <center><a href="https://github.com/SamanthaEpling/The-Tech-Academy-Basic-C-Sharp-Projects/tree/master/EplingPets" target="_blank">Epling Pets Application</a></center>
+                </div>
+
+
+
             </div>
             <div class="Column_2">
                 <a href="https://github.com/SamanthaEpling" target="_blank"><img src="Stylesheet/Images/Python_work_screenshot.png" alt="Screenshot showing PyCharm, Command Line Prompt, DB Browser for SQLite, and website of tutorial."></a>
@@ -206,30 +211,31 @@
 
         <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-                <div class="form-popup" id="myForm">
-                    <form action="https://formspree.io/f/mbjpwpgk" method="POST" class="form-container">
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mbjpwpgk" method="POST" class="form-container">
                     <h1>Contact</h1>
-                        <label for="_replyto"><b>Name</b></label>
-                            <input type="text" placeholder="Type your name here" _replyto="_replyto" required>
-                        <label for="phone"><b>Phone</b></label>
-                            <input type="text" placeholder="Enter your phone number here" name="phone">
-                        <label for="email"><b>Email</b></label>
-                            <input type="email" placeholder="Type your email address here" name="email" required>
-                        <label for="message"><b>Message</b></label>
-                            <input type="text" placeholder="Type your message here" name="message">
-            
-            <button id="myForm-button">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-            <p id="myForm-status"></p>
-                    </form>
-                </div>                
+                    <label for="_replyto"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" _replyto="_replyto" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button id="myForm-button">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    
+                </form>
+            </div>
         </div>
         <footer>
-            <center>Samantha Epling, <span id="current_year_display"></span><br><i> With special thanks to:  </i><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>        
+            <center>Samantha Epling, <span id="current_year_display"></span><br><i> With special thanks to:  </i><a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
         </footer>
         <script>
             var y = new Date();
             document.getElementById("current_year_display").innerHTML = y.getFullYear();
         </script>
+        <script src="Stylesheet/SamEpling.js"></script>
     </body>
 </html>
