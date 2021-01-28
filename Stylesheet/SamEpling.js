@@ -16,7 +16,11 @@ $(document).ready(function () {
     });
 });
 
-
+document.bodyclassName += ' fade-out';
+$(function () {
+    $('body').removeClass('fade-out');
+}
+);
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";

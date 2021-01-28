@@ -9,14 +9,7 @@
         
     </head>
     <body class="Background">
-        <!--FADE IN-->
-        <script>
-            document.bodyclassName += ' fade-out';
-            $(function () {
-                $('body').removeClass('fade-out');
-            }
-            );
-        </script>
+
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#Slideshow">Slideshow</a>
@@ -32,7 +25,7 @@
             <br>
             <br>
 
-            <video autoplay muted loop id="Typing_Video">
+            <video autoplay muted loop id="Planet_Video">
                 <source src="Stylesheet/Video/video.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
@@ -156,9 +149,14 @@
         <div class="Row" id="GitHub">
             <div class="Column_1">
                 <h1>Skills Showcase</h1>
-                <a href="https://github.com/SamanthaEpling" target="_blank"><img src="Stylesheet/Images/—Pngtree—github icon design vector_3648767.png" id="github_icon" alt="github icons png from pngtree.com"></a>
-                <a href="https://www.linkedin.com/in/samanthaepling/" target="_blank"><img src="Stylesheet/Images/—Pngtree—linkedin icon_3584856.png" id="linkedin_icon" alt="linkedin icons png from pngtree.com"></a>
-
+                <div class="image_row">
+                    <div class="image_column">
+                        <a href="https://github.com/SamanthaEpling" target="_blank"><img src="Stylesheet/Images/—Pngtree—github icon design vector_3648767.png" id="github_icon" alt="github icons png from pngtree.com"></a>
+                    </div>
+                    <div class="image_column">
+                        <a href="https://www.linkedin.com/in/samanthaepling/" target="_blank"><img src="Stylesheet/Images/—Pngtree—linkedin icon_3584856.png" id="linkedin_icon" alt="linkedin icons png from pngtree.com"></a>
+                    </div>
+                </div>
                 <div>
                     <h5>HTML & CSS Projects</h5>
                     <p>One of my earliest designs for coursework requirements, but includes several pictures of my animal family.</p>
